@@ -1,0 +1,13 @@
+@relation transactions
+
+@attribute itemsBought string
+
+@data
+'a,d,e'
+'b,c,e'
+'a,b,c,d,e'
+'b,c,e'
+'a,c,e'
+'a,d,e'
+'a,b,d'
+'a,b,c'
