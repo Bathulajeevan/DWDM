@@ -1,0 +1,14 @@
+marks <- c(55,60,71,63,55,65,50,55,58,59,61,63,65,67,71,72,75)
+
+# (a) Equal-frequency (quantile) binning
+library(classInt)
+bins <- classIntervals(marks, n=3, style="quantile")
+hist(marks, breaks=bins$brks, main="Equal-Frequency Partitioning")
+
+# (b) Equal-width partitioning
+bins <- classIntervals(marks, n=3, style="equal")
+hist(marks, breaks=bins$brks, main="Equal-Width Partitioning")
+
+# (c) Clustering
+clust <- kmeans(marks, centers=3)
+plot(marks, col=clust$cluster, pch=16, main="Clustering Marks")
