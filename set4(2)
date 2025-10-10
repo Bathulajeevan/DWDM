@@ -1,0 +1,5 @@
+min_F <- 50000
+max_F <- 100000
+F <- 80000
+norm_F <- (F - min_F) / (max_F - min_F)
+print(norm_F) # Returns 0.6
