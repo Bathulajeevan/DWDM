@@ -1,0 +1,6 @@
+intervals <- c(1,5,15,20,50,80,110)
+freq <- c(300,550,500,1500,800,74)
+mid <- c(3,10,17.5,35,65,95)
+data <- rep(mid,freq)
+median_value <- median(data)
+print(median_value)
