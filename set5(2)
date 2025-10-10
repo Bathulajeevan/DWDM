@@ -1,0 +1,9 @@
+data <- c(200, 300, 400, 600, 1000)
+
+# (a) Min-max normalization
+minmax <- (data - min(data)) / (max(data) - min(data))
+minmax
+
+# (b) Z-score normalization
+zscore <- (data - mean(data)) / sd(data)
+zscore
